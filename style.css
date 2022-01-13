@@ -1,0 +1,75 @@
+ol>li, ul>li{
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: aqua;
+    border-radius: 5px;
+    margin: 2px;
+}
+
+ul, ol{
+    padding:10px;
+}
+
+.fab{
+    font-size: 50px;
+    color: blueviolet;
+}
+
+ol>li:hover{
+    background-image: linear-gradient(aqua,white);
+    box-shadow: 0px 5px 5px rgb(184, 184, 184);
+}
+
+marquee{
+    width: 500px;
+    display: block;
+    margin: 10px 0px;
+    padding: 10px 0px;
+}
+
+td,th{
+    border: 1px solid;
+    padding: 2px 5px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+div{
+    display: flex;
+}
+
+.box, .inner{
+    background-color: blueviolet;
+    width: 200px;
+    height: 200px;
+    border:2px solid black;
+
+}
+
+.inner{
+    background-color: yellow;
+    transform: scale(0.75) rotate(30deg);
+}
+
+.main{
+    display: flex;
+}
+
+.newbox{
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    border: 2px solid yellow;
+    background-color: violet;
+    transition: box-shadow 0.5s, transform 1s;
+}
+
+.newbox:hover{
+    /* width: 250px; */
+    box-shadow: 0px 0px 20px black;
+    transform: scale(1.25) rotate(360deg);
+}
+
+

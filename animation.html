@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes sliding {
+            0%{
+                background-color: red;
+                left: 0;
+                top: 0px;
+                transform: scale(2);
+            }
+
+            25%{
+                top:260px;
+                transform: scale(1);
+                background-color: orange;
+            }
+
+            50%{
+                top: 0px;
+                transform: scale(2);
+                background-color: red;
+            }
+
+            75%{
+                top:260px;
+                transform: scale(1);
+                background-color: orange;
+            }
+
+            100%{
+                background-color: red;
+                left: 360px;
+                top: 0px;
+                transform: scale(2);
+            }
+        }
+
+        @keyframes sliding1 {
+            0%{
+                background-color: red;
+                left: 360px;
+                top: 220px;
+                transform: scale(2);
+            }
+
+            25%{
+                top: -20px;
+                transform: scale(1);
+                background-color: orange;
+            }
+
+            50%{
+                top: 220px;
+                transform: scale(2);
+                background-color: red;
+            }
+
+            75%{
+                top: -20px;
+                transform: scale(1);
+                background-color: orange;
+            }
+
+            100%{
+                background-color: red;
+                left: 0;
+                top: 220px;
+                transform: scale(2);
+            }
+        }
+        .space{
+            height: 300px;
+            width: 400px;
+            background-color: yellow;
+        }
+
+        .ball{
+            height: 40px;
+            width: 40px;
+            position: relative;
+            background-color: rgb(255, 0, 0);
+            border-radius: 50%;
+            animation: sliding 5s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+        }
+
+        .ball1{
+            height: 40px;
+            width: 40px;
+            position: relative;
+            background-color: rgb(255, 0, 0);
+            border-radius: 50%;
+            top: 220px;
+            animation: sliding 5s ease-in-out 0.5s infinite alternate;
+            animation-play-state: running;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="space">
+        <div class="ball">
+
+        </div>
+        <div class="ball1">
+
+        </div>
+    </div>
+</body>
+</html>
